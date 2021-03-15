@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <div id="success"><h1>Gracias por su compra!!</h1></div>
+        <div class="welcome">
+            <h1 id='welcome-title'>Bienvenido a la Web de comida en línea!</h1>
+            <p></p>
+        </div>
+        <div class="ordenar-container">
+            <div class="order">
+                <label for="tipo" id="pizza-type">Qué desea ordenar?</label><br>
+                <input type='submit' id='pizzaSelect' onclick="pizzaClick()" value='Pizza'></input>
+                <input type='submit' id='pastaSelect' onclick="pastaClick()" value='Pasta'></input>
+            </div>
+            <div class="pizza-container">
+                <div class="doble-cards">
+                    <div class="cards-pizza" id="pizza1">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/GPXG7dy.png" alt="Pizza1">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Pizza 1</h2>
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                                <h3 class="pizza-ingredients-title">Precio: <strong>$260</strong></h3>
+                            </div>
+                        </div>
+                        <input type="submit" class="add-btn" value="Añadir"></input>
+
+                    </div>
+                    <div class="cards-pizza" id="pizza2">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/eUmH4sb.png" alt="Pizza2">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Pizza 2</h2>
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                                <h3 class="pizza-ingredients-title">Precio: <strong>$280</strong></h3>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+                    </div>
+                </div>
+                <div class="doble-cards">
+                    <div class="cards-pizza" id="pizza3">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/irYnjxK.png" alt="Pizza3">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Pizza 3</h2>
+
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                                <h3 class="pizza-ingredients-title">Precio: <strong>$280</strong></h3>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+                    </div>
+                    <div class="cards-pizza" id="pizza4">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/wKkzDfN.png" alt="Pizza4">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Pizza 4</h2>
+
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+
+                                </ul>
+                                <h3 class="pizza-ingredients-title">Precio: <strong>$240</strong></h3>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pasta-container">
+                <div class="doble-cards">
+                    <div class="cards-pizza" id="pasta1">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/np7f8H9.png" alt="Pasta 1">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Fideos</h2>
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+
+                    </div>
+                    <div class="cards-pizza" id="pasta2">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/k86iqx9.png" alt="Pasta 2">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Sorrentinos</h2>
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+                    </div>
+                </div>
+                <div class="doble-cards">
+                    <div class="cards-pizza" id="pasta3">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/Oqx66uD.png" alt="Pasta 3">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Canelones</h2>
+
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+
+                    </div>
+                    <div class="cards-pizza" id="pasta4">
+                        <div class="pizza-top-container">
+                            <img src="https://i.imgur.com/KArpVpC.png" alt="Pasta 4">
+                            <div class="pizza-info">
+                                <h2 class="pizza-title">Ravioles</h2>
+
+                                <h3 class="pizza-ingredients-title">Ingredientes:</h3>
+                                <ul>
+                                    <li class="pizza-ingredients">Tomate</li>
+                                    <li class="pizza-ingredients">Albahaca</li>
+                                    <li class="pizza-ingredients">Queso</li>
+                                    <li class="pizza-ingredients">Salsa</li>
+                                    <li class="pizza-ingredients">Masa</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="submit"  class="add-btn" value="Añadir"></input>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="miPedido">
+        <h2 id='pedido-title'>TU PEDIDO:</h2>
+        
+        <ul id='pedidoList'></ul>
+        <div class="pedidoInfo">
+        <p id='cantidad-items'>Cantidad de Viandas: <strong id='item-quantity'></strong> </p>
+        <input type="submit" id='comprar-btn'value="Comprar" onclick="success()">
+    </div>
+    </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background: url(https://i.imgur.com/EUjgOWf.png);
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/*ESTILOS GLOBALES */
+
+h1,
+h2,
+h3,
+p,
+label {
+    color: #fff;
+}
+
+input[type="submit"],
+select {
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: .15s;
+    margin-top: 20px;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+select {
+    padding: 5px 45px;
+
+}
+
+input[type="submit"] {
+    width: 50%;
+}
+
+img {
+    width: 210px;
+}
+
+
+/*HOVERS*/
+
+input[type="submit"]:hover {
+    background-color: #317034;
+}
+
+
+/*EN ORDEN SEGUN HTML*/
+
+.main-container,#miPedido {
+    width: 60%;
+    margin: 50px auto 0 auto;
+    background-color: #552021;
+    padding: 32px;
+    border-radius: 15px;
+}
+#success{
+    background-color:#4caf50;
+    padding:15px;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto 1.40em auto;
+    display:none;
+}
+#welcome-title{
+    line-height:30px;
+    text-align: center;
+}
+
+.doble-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-pizza {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+.order{
+    text-align: center;
+}
+.pizza-top-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pizza-title,
+.pizza-ingredients,
+.pizza-ingredients-title {
+    color: #552021;
+}
+
+#pizza-type {
+    font-size: 24px;
+}
+
+#miPedido,.pizza-container,.pasta-container{
+    display: none; 
+    transition:.2s;
+}
+
+#pedidoList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#pedidoList li{
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 40%;
+    margin: 10px auto 0 auto;
+    border-left: 5px solid #4caf50;
+    cursor: pointer;
+}
+#pedido-title{
+    position: relative;
+    left:30%;
+}
+
+#cantidad-items{
+    margin-top: 40px;
+}
+.pedidoInfo{
+    display:flex;
+    justify-content:space-between;
+    width:40%;
+    margin:auto;
+}

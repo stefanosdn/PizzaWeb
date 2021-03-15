@@ -1,0 +1,55 @@
+@media (max-width: 1325px){
+    .main-container,#miPedido{
+        width: 90%;
+    }
+}
+@media (max-width:1024px){
+    body{
+        height:auto;
+    }
+    .main-container,#miPedido{
+        border-radius: 0;
+    }
+    .doble-cards{
+        display: block;
+    }
+    .cards-pizza{
+        width: 90%;
+    }
+    .order,.welcome{
+text-align: center;
+    }
+}
+@media (max-width:768px){
+    .cards-pizza{
+        width:100%;
+        border-radius: 15px;
+    }
+    button{
+        width: 80%;
+    }
+}
+@media (max-width:440px){
+    .pizza-top-container{
+        flex-direction: column;
+
+    }
+    img{
+        align-self: center;
+    }
+    h1{
+        font-size:24px;
+    }
+    label,select{
+        font-size:22px
+    }
+    select{
+        font-size: 16px;
+
+    }
+    .main-container,#miPedido{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
